@@ -42,7 +42,17 @@ scaffolds ember app inside main directory like so:
 
 ### Templates
 
-``` yo ember-laravel:templates ```
+``` yo ember-laravel:templates templateName ```
+
+creates
+
+```hbs
+{{!-- file located at ember/templates/templateName.hbs --}}
+<h1> templateName Template </h1> 
+
+```
+
+> **Protip**: The command supports subdirectories. So if you type something like ```yo ember-laravel:template customers/index```, it would create a template located in ```ember/templates/customers/index.hbs```
 
 ### Routes
 
