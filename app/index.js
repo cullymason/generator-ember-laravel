@@ -21,18 +21,9 @@ EmberLaravelGenerator.prototype.askFor = function askFor() {
 
   // have Yeoman greet the user.
   console.log(this.yeoman);
+  console.log("Lets create this Ember App.");
+  cb();
 
-  var prompts = [{
-    name: 'namespace',
-    message: 'What namespace would you like to use?',
-    default: 'App'
-  }];
-
-  this.prompt(prompts, function (props) {
-    this.namespace = props.namespace;
-
-    cb();
-  }.bind(this));
 };
 
 EmberLaravelGenerator.prototype.app = function app() {

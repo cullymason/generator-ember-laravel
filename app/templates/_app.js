@@ -1,8 +1,8 @@
-<%= _.slugify(namespace) %> = Ember.Application.create({
+App = Ember.Application.create({
 	LOG_TRANSITIONS: true
 });
 
-<%= _.slugify(namespace) %>.Store = DS.Store.extend({
+App.Store = DS.Store.extend({
   adapter: DS.RESTAdapter.extend({
   })
 });
