@@ -36,3 +36,19 @@ scaffolds ember app inside main directory like so:
 ### Templates
 
 ``` yo ember-laravel:templates ```
+
+### Routes
+
+``` yo ember-laravel:route routeName ```
+
+generates a route file ```ember/routes/routeName.js``` that follows this code structure:
+
+```
+App.RouteNameRoute = Ember.Route.extend({
+
+  model: function(params) {
+      return this.store.find('routeName',params.badge_id); 
+  }
+  
+});
+```
