@@ -3,6 +3,13 @@ Ember/Laravel Generator
 
 > A Yeoman generator for building Ember web apps with a Laravel Backend
 
+Installation
+-------------
+
+Once this generator is finished you should be able to run ```yo install -g generator-ember-larave```. For now, clone this repository and then run 'npm link'. 
+
+> **Important**: when you clone the repository, clone it into a folder named "generator-ember-laravel". If you do not, the symlink will not work.
+
 Commands
 --------
 
