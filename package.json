@@ -1,9 +1,9 @@
 {
   "name": "generator-ember-laravel",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "description": "A generator creating ember specific templates in a laravel world",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator emberjs laravel"
   ],
   "homepage": "https://github.com/cullymason/generator-ember-laravel",
   "bugs": "https://github.com/cullymason/generator-ember-laravel/issues",
