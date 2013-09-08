@@ -54,7 +54,7 @@ generates a route file ```ember/routes/routeName.js``` that follows this code st
 App.RouteNameRoute = Ember.Route.extend({
 
   model: function(params) {
-      return this.store.find('routeName',params.badge_id); 
+      return this.store.find('routeName',params.routeName_id); 
   }
   
 });
