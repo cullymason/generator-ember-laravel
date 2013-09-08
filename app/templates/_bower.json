@@ -1,6 +1,28 @@
 {
-  "name": "package",
+  "name": "laravel_ember_starter_kit",
   "version": "0.0.0",
-  "dependencies": {}
+  "homepage": "https://github.com/cullymason/Laravel-Ember-Starter-Kit",
+  "authors": [
+    "cullymason <cullymason@gmail.com>"
+  ],
+  "description": "A boiler plate for writing web apps using Laravel and Ember",
+  "keywords": [
+    "laravel",
+    "emberjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "ember": "~1.0.0",
+    "ember-data": "~1.0.0-beta.2",
+    "bootstrap": "~3.0.0",
+    "ember-data-shim": "1.0.0-beta.2"
+  }
 }
-

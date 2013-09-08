@@ -43,8 +43,11 @@ EmberLaravelGenerator.prototype.app = function app() {
   this.mkdir('ember/templates');
   this.template('_app.js', 'ember/app.js');
   this.template('_router.js', 'ember/router.js');
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  this.template('_bower.json', 'bower.json');
+  this.template('_package.json', 'package.json');
+  this.template('_Gruntfile.js','Gruntfile.js');
+  this.template('_.bowerrc','.bowerrc')
+
 };
 
 EmberLaravelGenerator.prototype.projectfiles = function projectfiles() {
