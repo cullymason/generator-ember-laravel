@@ -7,12 +7,19 @@ var RouteGenerator = module.exports = function RouteGenerator(args, options, con
   // By calling `NamedBase` here, we get the argument to the subgenerator call
   // as `this.name`.
   yeoman.generators.NamedBase.apply(this, arguments);
-  console.log('creating Ember Route ' + this.name + '.');
-  this.routeName = this.name;
+  console.log('Creating Route: ' + this.name + 'Route.js');
+  this.routeName = this._.strRightBack(this.name,'/');
+  this.routePath;
+  if(this._.str.include(this.name,'/'))
+  {
+  	this.routePath = this._.strLeftBack(this.name,'/')+'/';
+  	//console.log(this.viewPath);
+  }
+  this.classifyRouteName = this._.classify(this.routeName);
 };
 
 util.inherits(RouteGenerator, yeoman.generators.NamedBase);
 
 RouteGenerator.prototype.files = function files() {
-  this.template('_route.js', 'ember/routes/'+this.routeName+'.js');
+  this.template('_route.js', 'ember/routes/'+( typeof this.routePath  !== "undefined" ?  this.routePath : "" )+this.classifyRouteName+'Route.js');
 };
