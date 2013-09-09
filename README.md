@@ -44,13 +44,25 @@ scaffolds ember app inside main directory like so:
 
 ``` yo ember-laravel:view ```
 
+creates
+
+```javascript
+App.ViewNameView = Ember.View.extend({
+
+	//classNames: "container",
+	//tagName: 'div'
+  
+});
+```
+
+
 ### Templates
 
 ``` yo ember-laravel:templates templateName ```
 
 creates
 
-```hbs
+```Handlebars
 {{!-- file located at ember/templates/templateName.hbs --}}
 <h1> templateName Template </h1> 
 
@@ -64,7 +76,7 @@ creates
 
 generates a route file ```ember/routes/routeName.js``` that follows this code structure:
 
-```
+```javascript
 App.RouteNameRoute = Ember.Route.extend({
 
   model: function(params) {
