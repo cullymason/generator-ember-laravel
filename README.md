@@ -14,12 +14,15 @@ Simply, clone this repository and then run 'npm link'.
 
 > **Important**: when you clone the repository, clone it into a folder named "generator-ember-laravel". If you do not, the symlink will not work.
 
+From there you can use these Commands: 
+
 Commands
 --------
 
+
 ### App
 
-``` yo ember-laravel ```
+> ``` yo ember-laravel ```
 
 scaffolds ember app inside main directory like so:
 
@@ -34,15 +37,39 @@ scaffolds ember app inside main directory like so:
 
 ### Model
 
-``` yo ember-laravel:model ```
+**UNDER DEVELOPMENT**
+
+> ``` yo ember-laravel:model ```
 
 ### Controller
 
-``` yo ember-laravel:controller ```
+#### Object Controller (default)
+
+> ``` yo ember-laravel:controller controllerName ```
+
+
+```javascript
+
+App.ControllerNameController = Ember.ObjectController.extend({
+  
+});
+```
+
+#### ArrayController
+
+> ``` yo ember-laravel:controller controllerName --array```
+
+```javascript
+
+App.ControllerNameController = Ember.ArrayController.extend({
+  
+});
+```
+
 
 ### View
 
-``` yo ember-laravel:view ```
+> ``` yo ember-laravel:view viewName ```
 
 creates
 
@@ -58,7 +85,7 @@ App.ViewNameView = Ember.View.extend({
 
 ### Templates
 
-``` yo ember-laravel:templates templateName ```
+> ``` yo ember-laravel:templates templateName ```
 
 creates
 
@@ -72,7 +99,7 @@ creates
 
 ### Routes
 
-``` yo ember-laravel:route routeName ```
+> ``` yo ember-laravel:route routeName ```
 
 generates a route file ```ember/routes/routeName.js``` that follows this code structure:
 
