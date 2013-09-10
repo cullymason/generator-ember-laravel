@@ -1,5 +1,5 @@
 {
-  "name": "laravel_ember_starter_kit",
+  "name": "<%= _.slugify(appname) %>",
   "version": "0.0.0",
   "description": "A boiler plate for writing web apps using Laravel and Ember",
   "main": "public/index.php",
@@ -21,16 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cullymason/Laravel-Ember-Starter-Kit.git"
+    "url": "http://github.com/<%= _.slugify(appname) %>.git"
   },
   "keywords": [
     "laravel",
     "emberjs"
   ],
-  "author": "Cullison Mason",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/cullymason/Laravel-Ember-Starter-Kit/issues"
+    "url": "http://github.com//<%= _.slugify(appname) %>/issues"
   },
   "dependencies": {
     "grunt": "~0.4.1",

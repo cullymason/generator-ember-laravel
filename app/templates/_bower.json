@@ -1,10 +1,7 @@
 {
-  "name": "laravel_ember_starter_kit",
+  "name": "<%= _.camelize(appname) %>",
   "version": "0.0.0",
-  "homepage": "https://github.com/cullymason/Laravel-Ember-Starter-Kit",
-  "authors": [
-    "cullymason <cullymason@gmail.com>"
-  ],
+  "homepage": "https://github.com/<%= _.slugify(appname) %>",
   "description": "A boiler plate for writing web apps using Laravel and Ember",
   "keywords": [
     "laravel",
