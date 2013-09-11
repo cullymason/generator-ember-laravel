@@ -37,9 +37,24 @@ scaffolds ember app inside main directory like so:
 
 ### Model
 
-**UNDER DEVELOPMENT**
+> ``` yo ember-laravel:model  modelName attrName2:attrType attrName:relationshipType:relatedModel```
 
-> ``` yo ember-laravel:model ```
+generates: 
+
+```javascript
+App.Modelname = DS.Model.extend({
+	
+		
+			attrName: DS.attr('string'),
+			attrName2: DS.hasMany('relatedModel')
+		
+	
+});
+```
+
+**Supported Attributes**: string, number, date and boolean
+
+> **Relationship Support**: if you want to include a hasMany or belongsTo relationship, type ```yo ember-laravel:model modelName attrName:relationshipType:relatedModel```
 
 ### Controller
 
