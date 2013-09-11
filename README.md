@@ -8,7 +8,7 @@ This generator was created to be used with the [Ember Laravel Starter Kit](https
 Installation
 -------------
 
-simply run ```npm install generator-ember-laravel```
+simply run ```npm install -g generator-ember-laravel```
 
 **or**
 
