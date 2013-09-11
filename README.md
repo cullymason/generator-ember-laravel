@@ -3,6 +3,8 @@ Ember/Laravel Generator
 
 > A Yeoman generator for building Ember web apps with a Laravel Backend
 
+This generator was created to be used with the [Ember Laravel Starter Kit](https://github.com/cullymason/Laravel-Ember-Starter-Kit) but, it can be used without it.
+
 Installation
 -------------
 
