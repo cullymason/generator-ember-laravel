@@ -127,3 +127,5 @@ App.RouteNameRoute = Ember.Route.extend({
   
 });
 ```
+
+> **Note**: The file generated will include code that needs to be included in the ```ember/routes.js``` file.
