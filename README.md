@@ -37,27 +37,6 @@ scaffolds ember app inside main directory like so:
 - app.js
 - routes.js
 
-### Model
-
-> ``` yo ember-laravel:model  modelName attrName2:attrType attrName:relationshipType:relatedModel```
-
-generates: 
-
-```javascript
-App.Modelname = DS.Model.extend({
-	
-		
-			attrName: DS.attr('string'),
-			attrName2: DS.hasMany('relatedModel')
-		
-	
-});
-```
-
-**Supported Attributes**: string, number, date and boolean
-
-> **Relationship Support**: if you want to include a hasMany or belongsTo relationship, type ```yo ember-laravel:model modelName attrName:relationshipType:relatedModel```
-
 ### Controller
 
 #### Object Controller (default)
@@ -83,36 +62,26 @@ App.ControllerNameController = Ember.ArrayController.extend({
 });
 ```
 
+### Model
 
-### View
+> ``` yo ember-laravel:model  modelName attrName2:attrType attrName:relationshipType:relatedModel```
 
-> ``` yo ember-laravel:view viewName ```
-
-creates
+generates: 
 
 ```javascript
-App.ViewNameView = Ember.View.extend({
-
-	//classNames: "container",
-	//tagName: 'div'
-  
+App.Modelname = DS.Model.extend({
+	
+		
+			attrName: DS.attr('string'),
+			attrName2: DS.hasMany('relatedModel')
+		
+	
 });
 ```
 
+**Supported Attributes**: string, number, date and boolean
 
-### Templates
-
-> ``` yo ember-laravel:templates templateName ```
-
-creates
-
-```Handlebars
-{{!-- file located at ember/templates/templateName.hbs --}}
-<h1> templateName Template </h1> 
-
-```
-
-> **Protip**: The command supports subdirectories. So if you type something like ```yo ember-laravel:template customers/index```, it would create a template located in ```ember/templates/customers/index.hbs```
+> **Relationship Support**: if you want to include a hasMany or belongsTo relationship, type ```yo ember-laravel:model modelName attrName:relationshipType:relatedModel```
 
 ### Routes
 
@@ -131,3 +100,34 @@ App.RouteNameRoute = Ember.Route.extend({
 ```
 
 > **Note**: The file generated will include code that needs to be included in the ```ember/routes.js``` file.
+
+
+### Templates
+
+> ``` yo ember-laravel:templates templateName ```
+
+creates
+
+```Handlebars
+{{!-- file located at ember/templates/templateName.hbs --}}
+<h1> templateName Template </h1> 
+
+```
+
+> **Protip**: The command supports subdirectories. So if you type something like ```yo ember-laravel:template customers/index```, it would create a template located in ```ember/templates/customers/index.hbs```
+
+### View
+
+> ``` yo ember-laravel:view viewName ```
+
+creates
+
+```javascript
+App.ViewNameView = Ember.View.extend({
+
+	//classNames: "container",
+	//tagName: 'div'
+  
+});
+```
+
